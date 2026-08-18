@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F7FA;
+    color: #334155;
+    line-height: 1.6;
+}
+header {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 20px;
+    color: #CBD5E1;
+}
+nav {
+    background-color: #1E293B;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #38BDF8;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+}
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+section{
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+section h2{
+    margin-bottom: 15px;
+    color: #0F172A;
+}
+section h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #2563EB;
+}
+section p{
+    line-height: 1.7;
+}
+.contacto h2 {
+    margin-bottom: 20px;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contacto label {
+    font-weight: bold;
+    color: #0F172A;
+}
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #F8FAFC;
+}
+.contacto input:focus,
+.contacto textarea:focus {
+    outline: none;
+    border-color: #2563EB;
+}
+.contacto button {
+    width: fit-content;
+    padding: 10px 25px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contacto button:hover {
+    background-color: #1D4ED8;
+}
+footer {
+    background-color: #0B1120;
+    color: #CBD5E1;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        width: 100%;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 35px 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}
+body.dark-mode {
+    background-color: #0F172A;
+    color: #E2E8F0;
+}
+
+body.dark-mode header {
+    background-color: #020617;
+}
+
+body.dark-mode nav {
+    background-color: #020617;
+}
+
+body.dark-mode section {
+    background-color: #1E293B;
+    color: #E2E8F0;
+}
+
+body.dark-mode section h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode section h3 {
+    color: #38BDF8;
+}
+
+body.dark-mode .contacto label {
+    color: #E2E8F0;
+}
+
+body.dark-mode .contacto input,
+body.dark-mode .contacto textarea {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    border-color: #475569;
+}
+.aviso {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #FEE2E2;
+    color: #B91C1C;
+    border: 1px solid #FCA5A5;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #DCFCE7;
+    color: #166534;
+    border: 1px solid #86EFAC;
+}
+.producto {
+    background-color: #F8FAFC;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    color: #2563EB;
+    margin-bottom: 8px;
+}
+
+.producto p {
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1D4ED8;
+}
+.errores {
+    background-color: #FEF2F2;
+    color: #B91C1C;
+    border: 1px solid #FCA5A5;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.errores ul {
+    margin-left: 20px;
+}
