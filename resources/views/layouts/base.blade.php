@@ -17,8 +17,11 @@
     </header>
 
     <nav>
+    
         <a href="/productos">Productos</a>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <a href="/productos/nuevo">Nuevo producto</a>
+
     </nav>
 
     <main>
