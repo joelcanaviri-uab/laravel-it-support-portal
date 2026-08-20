@@ -13,7 +13,6 @@ class AuthController extends Controller
         return view('login');
     }
 
-    // Procesa el inicio de sesión (exacto como en el diagrama del material)
     public function login(Request $request)
     {
         $credentials = $request->validate([
@@ -31,7 +30,6 @@ class AuthController extends Controller
         ])->onlyInput('email');
     }
 
-    // Cierra la sesión
     public function logout(Request $request)
     {
         Auth::logout();
